@@ -1,0 +1,13 @@
+.container-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #001;
+  padding: 10px;
+  border-radius: 50px;
+}
+.profile {
+  height: 200px;
+  border-radius: 50%;
+}

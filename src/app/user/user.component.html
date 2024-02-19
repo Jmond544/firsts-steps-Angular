@@ -1,0 +1,16 @@
+<section class="container-user">
+  @if (isLoggedIn) {
+    <p>Bienvenido, {{ userName }}</p>
+    <img
+    (click)="logOut()"
+    class="profile" src="http://github.com/{{userName}}.png" alt="profile">
+    <app-movies userName = "{{userName}}" (addFavoriteEvent)="getFavoriteMovie($event)"/>
+    @if (favMovie !== '') {
+      <p>Has seleccionado {{favMovie}}</p>
+    }
+  } @else {
+    <p>Inicia sesión</p>
+    <input type="text" placeholder="Ingresa tu usuario de GitHub" [(ngModel)]="userName" >
+    <button (click)="logIn()">LogIn</button>
+  }
+</section>
