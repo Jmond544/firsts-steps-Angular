@@ -1,0 +1,8 @@
+<h3>Los juegos favoritos de {{userName}}</h3>
+<ul>
+  @for (movie of movies; track movie.id) {
+    <li (click)="fav(movie.name)">
+      {{movie.name}}
+    </li>
+  }
+</ul>
