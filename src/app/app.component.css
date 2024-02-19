@@ -1,3 +1,13 @@
+.principal-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3f51b5;
+  background: linear-gradient(90deg, #3f51b5, #778);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
